@@ -1,0 +1,18 @@
+// FONT-SIZE
+// rem font-size with px fallback
+///////////////////////////////////////////////////////////////////////////////
+
+@mixin font-size($sizeValue: 1.6){
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+// BOX RESET
+// Reset border, margin, and padding
+///////////////////////////////////////////////////////////////////////////////
+
+@mixin box-reset() {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}

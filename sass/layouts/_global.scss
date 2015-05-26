@@ -1,0 +1,67 @@
+// GLOBAL LAYOUT
+///////////////////////////////////////////////////////////////////////////////
+
+// GRID CONTAINER
+.l-container {
+  @include outer-container;
+  max-width: 900px;
+}
+
+// HEADER
+.l-header {
+  @include outer-container;
+  padding: 10px;
+}
+
+.l-header__brand {
+  @include media($small-screen)  {
+    @include span-columns(8);
+  }
+}
+
+.l-header__nav {
+  @include media($small-screen)  {
+    @include span-columns(4);
+    text-align: right;
+  }
+  text-align: center;
+}
+
+// MAIN COLUMN CONTENT
+.l-content {
+  @include media($small-screen)  {
+    @include span-columns(8);
+  }
+  padding: 10px;
+}
+
+// SIDEBAR
+.l-aside {
+  @include media($small-screen)  {
+    @include span-columns(4);
+  }
+  padding: 10px;
+}
+
+// FOOTER
+.l-footer {
+  @include outer-container;
+  @include font-size (1.2);
+  padding: 20px 0;
+  max-width: 900px;
+  border-top: 1px dashed $light-gray;
+}
+
+.l-footer__nav {
+  @include media($small-screen)  {
+    @include span-columns(8);
+  }
+}
+
+.l-footer__credits {
+  @include media($small-screen)  {
+    @include span-columns(4);
+    text-align: right;
+  }
+  padding-left: 5px;
+}

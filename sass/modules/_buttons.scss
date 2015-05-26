@@ -1,0 +1,143 @@
+// BASE BUTTON
+// based on https://github.com/csswizardry/beautons/blob/master/beautons.css
+///////////////////////////////////////////////////////////////////////////////
+
+%button {       
+  @include font-size(1.4);
+  display: inline-block;        
+  overflow: visible;              
+  margin: 0;
+  padding: 0 0.8em;       
+  height: 3em;           
+  border: none; 
+  border-radius: 3px;        
+  background-color: $medium-blue;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.6);
+  color: #fff;     
+  vertical-align: middle;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);    
+  white-space: nowrap;
+  font-weight: bold;         
+  line-height: 3;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited{
+    color:#fff;
+    text-decoration:none;
+  }
+
+  &:hover{
+    background-color: darken($medium-blue, 5%);
+  }
+
+  &:active,
+  &:focus{
+    outline:none;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.5) inset;
+  }
+
+  &::-moz-focus-inner {
+    padding: 0; 
+    border: 0;
+  }         
+}
+
+
+// SIZES
+///////////////////////////////////////////////////////////////////////////////
+
+// BASE BUTTON
+.button {
+  @extend %button;
+}
+
+// SMALL BUTTON
+.button--small {
+  @extend %button;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  height: 2em;
+  line-height: 2;
+}
+
+// LARGE BUTTON
+.button--large {
+  @extend %button;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  height: 4em;
+  line-height: 4;
+}
+
+// FULL WIDTH BUTTON
+.button--full {
+  @extend %button;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+// FUNCTIONS
+///////////////////////////////////////////////////////////////////////////////
+
+// BUTTON POSITIVE
+.button--positive{
+  @extend %button;
+  background-color: $green;
+  color: #fff;
+
+  &:hover{
+    background-color: darken($green, 5%);
+  }
+}
+
+// BUTTON NEGATIVE
+.button--negative {
+  @extend %button;
+  background-color: $red;
+  color: #fff;
+
+  &:hover{
+    background-color: darken($red, 5%);
+  }
+}
+
+// BUTTON WARNING
+.button--warning {
+  @extend %button;
+  background-color: $orange;
+  color: #fff;
+
+  &:hover{
+    background-color: darken($orange, 5%);
+  }
+}
+
+// BUTTON SECONDARY
+.button--secondary {
+  @extend %button;
+  background-color: $light-gray;
+  color: #fff;
+
+  &:hover{
+    background-color: darken($light-gray, 5%);
+  }
+}
+
+// DISABLED BUTTON
+.button--disabled {
+  @extend %button;
+  background-color: $light-blue;
+  cursor: default;
+  
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $light-blue;
+  }
+}

@@ -1,0 +1,76 @@
+!!!
+/[if IE 8] <html class="no-js lt-ie9" lang="en" >
+/ [if gt IE 8]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width", :name => "viewport"}
+    %title 
+      = @title
+    %link{:href => "stylesheets/app.css", :rel => "stylesheet"}
+    %script{:src => "javascripts/vendor/custom.modernizr.js"}
+  %body
+    
+    .l-container
+      .l-header
+        .l-header__brand
+          %h2 LLEW Practica Final
+          %p Delicious ERB, Haml + Sass
+        .l-header__nav
+          %nav
+            %ul.list--inline
+              %li
+                %a{:href => "/"}
+                  Home
+              %li
+                %a{:href => "/about"}
+                  About
+              %li.active
+                %a{:href => "/contact"}
+                  Contact
+      %hr
+    .l-container
+      .l-content
+        =yield
+      .l-aside
+        %form{action: "#", method: "get", role: "search"}
+          %h4
+            %label{for: "search-textbox"} Search
+          %input#search-textbox{name: "q", placeholder: "Search...", type: "search"}
+
+        %h4
+          Some useful links
+        %ul
+          %li
+            %a{:href => "http://get-serve.com/documentation"} Serve Documentation
+            = succeed "Everything" do
+              %br/
+            you need to know about using this project.
+          %li
+            %a{:href => "http://github.com/zurb/foundation"} txp.smacss
+            = succeed "Examples" do
+              %br/
+            of the CSS used in this project.
+
+    %footer.l-footer
+      %nav.l-footer__nav
+        %ul.list--inline
+          %li
+            %a{:href => "/"}
+              Home
+          %li
+            %a{:href => "/about"}
+              About
+          %li.active
+            %a{:href => "/contact"}
+              Contact
+      .l-footer__credits
+        Published with
+        = succeed "." do
+          %a{href: "http://get-serve.com/", rel: "external", title: "Go to the Serve website"} Serve
+
+    %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<script src="javascripts/vendor/jquery.js"><\/script>')
+    %script{:src => "javascripts/main.js"}

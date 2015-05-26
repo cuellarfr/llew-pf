@@ -1,0 +1,61 @@
+// COLORS
+///////////////////////////////////////////////////////////////////////////////
+
+$light-blue: #A4DBE8;
+$medium-blue: #00AFD7;
+$dark-blue: #0085A3;
+
+$lighter-gray: #F0F0F0;
+$light-gray: #DDD;
+$medium-gray: #B2B4B2;
+$dark-gray: #54585A;
+
+$red: #F04848;
+$yellow: #ECBD0C;
+$orange: #FF8200;
+$light-orange: #FECB8B;
+$green: #82BC00;
+$purple: #753BBD;
+
+// FONT COLORS
+$base-font-color: $dark-gray;
+$base-accent-color: $dark-blue;
+
+// TEXT LINK COLORS
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// BORDER COLOR
+$base-border-color: #DEDEDE;
+
+// ALERT COLORS
+$error-color: $red;
+$notice-color: $yellow;
+$success-color: $green;
+
+// TYPOGRAPHY
+///////////////////////////////////////////////////////////////////////////////
+
+$sans-serif: $helvetica;
+$serif: $georgia;
+
+$base-font-family: $sans-serif;
+$header-font-family: $sans-serif;
+
+// SIZES
+///////////////////////////////////////////////////////////////////////////////
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.5;
+$base-border-radius: em(3);
+
+// BREAKPOINTS
+///////////////////////////////////////////////////////////////////////////////
+
+$small-screen: em(560);
+$medium-screen: em(768);
+$large-screen: em(960);
+$huge-screen: em(1600);
+
+// $max-width: 90%;
+// $grid-columns: 12;
+
