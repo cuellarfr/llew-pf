@@ -380,7 +380,7 @@ table {
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 35em) {
+@media only screen and (max-width: 40em) {
   html {
     font-size: 55%;
   }
@@ -612,7 +612,7 @@ blockquote {
 .l-header__logo {
   text-align: center;
 }
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 40em) {
   .l-header__logo {
     float: left;
     display: block;
@@ -628,8 +628,9 @@ blockquote {
 
 .l-header__lang {
   text-align: center;
+  margin: 1em;
 }
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 40em) {
   .l-header__lang {
     float: left;
     display: block;
@@ -637,6 +638,7 @@ blockquote {
     width: 31.76157%;
     text-align: right;
     padding: 10px 5px;
+    margin: 0;
   }
   .l-header__lang:last-child {
     margin-right: 0;
@@ -650,11 +652,8 @@ blockquote {
   display: table;
   width: 100%;
 }
-.l-header__hero span {
-  font-size: 32px;
-  font-size: 3.2rem;
+.l-header__hero h1 {
   color: #fff;
-  font-weight: bold;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -662,14 +661,14 @@ blockquote {
 
 .l-header__nav {
   text-align: center;
-  background-color: #bbb;
+  background-color: #B2B4B2;
 }
 
 main {
   padding: 1em;
 }
 
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 40em) {
   .l-content {
     float: left;
     display: block;
@@ -681,7 +680,7 @@ main {
   }
 }
 
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 40em) {
   .l-aside {
     float: left;
     display: block;
@@ -699,8 +698,11 @@ main {
   padding: 2em 1em;
   margin-top: 20px;
 }
+.l-footer a {
+  color: #fff;
+}
 
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 40em) {
   .l-footer__credits {
     float: left;
     display: block;
@@ -712,7 +714,7 @@ main {
   }
 }
 
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 40em) {
   .l-footer__nav {
     float: left;
     display: block;
@@ -728,7 +730,7 @@ main {
   margin-bottom: 2.5em;
 }
 
-.button, .button--small, .button--large, .button--full, .button--positive, .button--negative, .button--warning, .button--secondary, .button--disabled {
+.button, .button--small, .button--large, .button--full, .button--active, .button--negative, .button--warning, .button--secondary, .button--disabled {
   font-size: 14px;
   font-size: 1.4rem;
   display: inline-block;
@@ -738,7 +740,7 @@ main {
   height: 3em;
   border: none;
   border-radius: 3px;
-  background-color: #00AFD7;
+  background-color: #B2B4B2;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
   color: #fff;
   vertical-align: middle;
@@ -749,18 +751,18 @@ main {
   line-height: 3;
   cursor: pointer;
 }
-.button:hover, .button--small:hover, .button--large:hover, .button--full:hover, .button--positive:hover, .button--negative:hover, .button--warning:hover, .button--secondary:hover, .button--disabled:hover, .button:active, .button--small:active, .button--large:active, .button--full:active, .button--positive:active, .button--negative:active, .button--warning:active, .button--secondary:active, .button--disabled:active, .button:focus, .button--small:focus, .button--large:focus, .button--full:focus, .button--positive:focus, .button--negative:focus, .button--warning:focus, .button--secondary:focus, .button--disabled:focus, .button:visited, .button--small:visited, .button--large:visited, .button--full:visited, .button--positive:visited, .button--negative:visited, .button--warning:visited, .button--secondary:visited, .button--disabled:visited {
+.button:hover, .button--small:hover, .button--large:hover, .button--full:hover, .button--active:hover, .button--negative:hover, .button--warning:hover, .button--secondary:hover, .button--disabled:hover, .button:active, .button--small:active, .button--large:active, .button--full:active, .button--active:active, .button--negative:active, .button--warning:active, .button--secondary:active, .button--disabled:active, .button:focus, .button--small:focus, .button--large:focus, .button--full:focus, .button--active:focus, .button--negative:focus, .button--warning:focus, .button--secondary:focus, .button--disabled:focus, .button:visited, .button--small:visited, .button--large:visited, .button--full:visited, .button--active:visited, .button--negative:visited, .button--warning:visited, .button--secondary:visited, .button--disabled:visited {
   color: #fff;
   text-decoration: none;
 }
-.button:hover, .button--small:hover, .button--large:hover, .button--full:hover, .button--positive:hover, .button--negative:hover, .button--warning:hover, .button--secondary:hover, .button--disabled:hover {
-  background-color: #009abe;
+.button:hover, .button--small:hover, .button--large:hover, .button--full:hover, .button--active:hover, .button--negative:hover, .button--warning:hover, .button--secondary:hover, .button--disabled:hover {
+  background-color: #a5a7a5;
 }
-.button:active, .button--small:active, .button--large:active, .button--full:active, .button--positive:active, .button--negative:active, .button--warning:active, .button--secondary:active, .button--disabled:active, .button:focus, .button--small:focus, .button--large:focus, .button--full:focus, .button--positive:focus, .button--negative:focus, .button--warning:focus, .button--secondary:focus, .button--disabled:focus {
+.button:active, .button--small:active, .button--large:active, .button--full:active, .button--active:active, .button--negative:active, .button--warning:active, .button--secondary:active, .button--disabled:active, .button:focus, .button--small:focus, .button--large:focus, .button--full:focus, .button--active:focus, .button--negative:focus, .button--warning:focus, .button--secondary:focus, .button--disabled:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
 }
-.button::-moz-focus-inner, .button--small::-moz-focus-inner, .button--large::-moz-focus-inner, .button--full::-moz-focus-inner, .button--positive::-moz-focus-inner, .button--negative::-moz-focus-inner, .button--warning::-moz-focus-inner, .button--secondary::-moz-focus-inner, .button--disabled::-moz-focus-inner {
+.button::-moz-focus-inner, .button--small::-moz-focus-inner, .button--large::-moz-focus-inner, .button--full::-moz-focus-inner, .button--active::-moz-focus-inner, .button--negative::-moz-focus-inner, .button--warning::-moz-focus-inner, .button--secondary::-moz-focus-inner, .button--disabled::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -786,12 +788,12 @@ main {
   text-align: center;
 }
 
-.button--positive {
-  background-color: #82BC00;
+.button--active {
+  background-color: #54585A;
   color: #fff;
 }
-.button--positive:hover {
-  background-color: #70a300;
+.button--active:hover {
+  background-color: #484b4d;
 }
 
 .button--negative {
@@ -830,7 +832,7 @@ main {
   width: 100%;
   padding: 0.5em 1em;
 }
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 40em) {
   .l-header__nav .list--inline li {
     width: auto;
   }
@@ -910,6 +912,7 @@ dl dd {
 
 .list--unstyled {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .list--inline {

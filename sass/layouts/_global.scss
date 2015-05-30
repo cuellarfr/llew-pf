@@ -25,8 +25,10 @@
     @include span-columns(4);
     text-align: right;
     padding: 10px 5px;
+    margin: 0;
   }
   text-align: center;
+  margin: 1em;
 }
 
 .l-header__hero {
@@ -36,10 +38,8 @@
   display: table;
   width: 100%;
   
-  span {
-    @include font-size(3.2);
+  h1 {
     color: #fff;
-    font-weight: bold;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -48,7 +48,7 @@
 
 .l-header__nav {
   text-align: center;
-  background-color: #bbb; 
+  background-color: $medium-gray; 
 }
 
 // MAIN COLUMN CONTENT
@@ -75,6 +75,10 @@ main {
   color: #fff;
   padding: 2em 1em;
   margin-top: 20px;
+
+  a {
+    color: #fff;
+  }
 }
 
 .l-footer__credits {

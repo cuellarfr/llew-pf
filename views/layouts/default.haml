@@ -14,21 +14,21 @@
     %header.l-header
       .l-container
         .l-header__logo
-          %a{:href => "/"}
-            %img{src:"/images/uoc-20anys.png", alt:"", title:""}
+          %a{:href => "/", title:"Anar a la pàgina d'inici"}
+            %img{src:"/images/uoc-20anys.png", alt:"Logo UOC"}
         .l-header__lang
           %ul.list--inline
             %li
-              %a{:href => "#"}
-                Català
+              %a.button--small.button--active{:href => "#", :title => "Llegir en català"}
+                Ca
             %li
-              %a{:href => "#"}
-                Castellà
+              %a.button--small{:href => "#", :title => "Llegir en castellà"}
+                Es
             %li
-              %a{:href => "#"}
-                Anglés
+              %a.button--small{:href => "#", :title => "Llegir en anglés"}
+                En
       .l-header__hero
-        %span
+        %h1
           Coneixement Obert
       %nav.l-header__nav
         %ul.list--inline
@@ -58,30 +58,34 @@
       .l-container
         .l-footer__credits
           %p
-            %img{src:"/images/uoc-20anys-footer.png", alt:""}
-          %ul.list--inline
-            %li
-              %a
-                Facebook
-            %li
-              %a
-                Twitter
-          %p
             Treball realitzat com a Pràctica final de l'assignatura Llenguatges i estàndards web, 2015
           %p
             Carlos Cuéllar Francés
+          %h3
+            La UOC a les xarxes socials
+          %ul.list--unstyled
+            %li
+              %a{:href => "https://www.facebook.com/UOC.universitat"}
+                Facebook
+            %li
+              %a{:href => "https://twitter.com/UOCuniversitat"}
+                Twitter
+          %hr
+          %img{src:"/images/uoc-20anys-footer.png", alt:"Logo UOC"}
 
         .l-footer__nav
-          Sobre la UOC
-          %ul
+          %h3
+            Sobre la UOC
+          %ul.list--unstyled
             %li
               %a{:href => "http://www.uoc.edu/portal/ca/index.html"}
                 Web de la UOC
             %li
               %a{:href => "http://www.uoc.edu/portal/ca/universitat/contacte-seus/index.html"}
                 Contacte i seus 
-          En aquest web
-          %ul
+          %h3
+            En aquest web
+          %ul.list--unstyled
             %li
               %a{:href => "/revistes"}
                 Revistes
