@@ -14,7 +14,8 @@
     %header.l-header
       .l-container
         .l-header__logo
-          %img{src:"/images/uoc-20anys.png", alt:"", title:""}
+          %a{:href => "/"}
+            %img{src:"/images/uoc-20anys.png", alt:"", title:""}
         .l-header__lang
           %ul.list--inline
             %li
@@ -31,23 +32,23 @@
           Coneixement Obert
       %nav.l-header__nav
         %ul.list--inline
-          %li.active
-            %a{:href => "/"}
+          %a{:href => "/"}
+            %li.active
               Inici
-          %li
-            %a{:href => "/revistes"}
+          %a{:href => "/revistes"}
+            %li
               Revistes
-          %li
-            %a{:href => "#"}
+          %a{:href => "#"}
+            %li
               Coneixement en xarxa
-          %li
-            %a{:href => "#"}
+          %a{:href => "#"}
+            %li
               Blogs
-          %li
-            %a{:href => "#"}
+          %a{:href => "#"}
+            %li
               Materials Oberts
-          %li
-            %a{:href => "#"}
+          %a{:href => "#"}
+            %li
               Videos
         
     %main.l-container

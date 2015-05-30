@@ -47,17 +47,19 @@
 }
 
 .l-header__nav {
-  padding: 1em;
   text-align: center;
   background-color: #bbb; 
 }
 
 // MAIN COLUMN CONTENT
+main {
+  padding: 1em;
+}
+
 .l-content {
   @include media($small-screen)  {
     @include span-columns(8);
   }
-  padding: 10px;
 }
 
 // SIDEBAR
@@ -65,14 +67,13 @@
   @include media($small-screen)  {
     @include span-columns(4);
   }
-  padding: 10px;
 }
 
 // FOOTER
 .l-footer {
-  background-color: #bbb;
+  background-color: #141315;
   color: #fff;
-  padding: 20px 0;
+  padding: 2em 1em;
   margin-top: 20px;
 }
 
