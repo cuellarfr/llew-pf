@@ -593,10 +593,9 @@ blockquote {
 }
 
 .l-container {
-  max-width: 68em;
+  max-width: 974px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 974px;
 }
 .l-container:after {
   content: "";
@@ -605,43 +604,64 @@ blockquote {
 }
 
 .l-header {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-.l-header:after {
-  content: "";
-  display: table;
-  clear: both;
+  padding: 20px 0;
 }
 
+.l-header__logo {
+  text-align: center;
+}
 @media screen and (min-width: 35em) {
-  .l-header__brand {
+  .l-header__logo {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
+    text-align: left;
+    padding: 10px 5px;
   }
-  .l-header__brand:last-child {
+  .l-header__logo:last-child {
     margin-right: 0;
   }
 }
 
-.l-header__nav {
+.l-header__lang {
   text-align: center;
 }
 @media screen and (min-width: 35em) {
-  .l-header__nav {
+  .l-header__lang {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
     text-align: right;
+    padding: 10px 5px;
   }
-  .l-header__nav:last-child {
+  .l-header__lang:last-child {
     margin-right: 0;
   }
+}
+
+.l-header__hero {
+  height: 150px;
+  background-image: url("/images/header-home.jpg");
+  background-size: cover;
+  display: table;
+  width: 100%;
+}
+.l-header__hero span {
+  font-size: 32px;
+  font-size: 3.2rem;
+  color: #fff;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.l-header__nav {
+  padding: 1em;
+  text-align: center;
+  background-color: #ccc;
 }
 
 .l-content {
@@ -675,7 +695,7 @@ blockquote {
 }
 
 .l-footer {
-  max-width: 68em;
+  max-width: 974px;
   margin-left: auto;
   margin-right: auto;
   font-size: 12px;

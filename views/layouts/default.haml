@@ -11,34 +11,46 @@
     %link{:href => "/stylesheets/app.css", :rel => "stylesheet"}
     %script{:src => "/javascripts/vendor/custom.modernizr.js"}
   %body
-    .l-container
-      .l-header
-        .l-header__brand
-          %h2 LLEW Practica Final
-          %p Delicious ERB, Haml + Sass
-        .l-header__nav
-          %nav
-            %ul.list--inline
-              %li.active
-                %a{:href => "/"}
-                  Inici
-              %li
-                %a{:href => "/revistes"}
-                  Revistes
-              %li
-                %a{:href => "#"}
-                  Coneixement en xarxa
-              %li
-                %a{:href => "#"}
-                  Blogs
-              %li
-                %a{:href => "#"}
-                  Materials Oberts
-              %li
-                %a{:href => "#"}
-                  Videos
-      %hr
-    .l-container
+    %header.l-header
+      .l-container
+        .l-header__logo
+          %img{src:"/images/uoc-20anys.png", alt:"", title:""}
+        .l-header__lang
+          %ul.list--inline
+            %li
+              %a{:href => "#"}
+                Català
+            %li
+              %a{:href => "#"}
+                Castellà
+            %li
+              %a{:href => "#"}
+                Anglés
+      .l-header__hero
+        %span
+          Coneixement Obert
+      %nav.l-header__nav
+        %ul.list--inline
+          %li.active
+            %a{:href => "/"}
+              Inici
+          %li
+            %a{:href => "/revistes"}
+              Revistes
+          %li
+            %a{:href => "#"}
+              Coneixement en xarxa
+          %li
+            %a{:href => "#"}
+              Blogs
+          %li
+            %a{:href => "#"}
+              Materials Oberts
+          %li
+            %a{:href => "#"}
+              Videos
+        
+    %main.l-container
       =yield
 
     %footer.l-footer
