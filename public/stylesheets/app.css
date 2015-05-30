@@ -842,6 +842,7 @@ main {
 .l-header__nav .list--inline li {
   width: 100%;
   padding: 0.5em 1em;
+  border-bottom: 3px solid #B2B4B2;
 }
 @media screen and (min-width: 40em) {
   .l-header__nav .list--inline li {
@@ -850,6 +851,10 @@ main {
 }
 .l-header__nav .list--inline li:hover {
   border-bottom: 3px solid #FF8200;
+}
+.l-header__nav .list--inline .active {
+  text-transform: uppercase;
+  border-bottom: 3px solid #153E4B;
 }
 .l-header__nav .list--inline a {
   color: #153E4B;
@@ -866,10 +871,6 @@ main {
 .l-header__nav .list--inline a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-}
-.l-header__nav .list--inline .active {
-  text-transform: uppercase;
-  border-bottom: 3px solid #153E4B;
 }
 
 .label, .label--info, .label--success, .label--warning, .label--error {

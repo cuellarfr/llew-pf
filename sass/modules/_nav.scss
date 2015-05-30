@@ -1,27 +1,27 @@
 .l-header__nav .list--inline {
-
   li {
     @include media($small-screen)  {
       width: auto;
     }
-    
     width: 100%;
     padding: 0.5em 1em;
-
+    border-bottom: 3px solid $medium-gray;
     &:hover {
       border-bottom: 3px solid $hover-link-color;
     }
+  }
+  .active {
+    text-transform: uppercase;
+    border-bottom: 3px solid $uoc-blue;
   }
   // Sobreescribe estilos de enlaces por defecto
   a {
     color: $uoc-blue;
     text-decoration: none;
     font-weight: bold;
-
     &:visited {
       color: $uoc-blue;
     }
-
     &:active {
       outline: none;
       color: $hover-link-color;
@@ -30,10 +30,5 @@
       outline: 5px auto -webkit-focus-ring-color;
       outline-offset: -2px;
     }
-  }
-
-  .active {
-    text-transform: uppercase;
-    border-bottom: 3px solid $uoc-blue;
   }
 }
