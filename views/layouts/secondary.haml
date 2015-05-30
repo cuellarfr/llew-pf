@@ -49,7 +49,7 @@
               Materials Oberts
           %a{:href => "#"}
             %li
-              Videos
+              Vídeos
         
     %main.l-container
       =yield
@@ -101,10 +101,14 @@
                 Materials oberts
             %li
               %a{:href => "/revistes"}
-                Videos
+                Vídeos
       
+    :javascript
+      $(document).ready(function(){
+        $(".panel").fitVids();
+      });
 
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
     :javascript
       window.jQuery || document.write('<script src="javascripts/vendor/jquery.js"><\/script>')
-    %script{:src => "javascripts/main.js"}
+    %script{:src => "/javascripts/main.js"}

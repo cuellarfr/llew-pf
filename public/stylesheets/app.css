@@ -963,6 +963,40 @@ dl dd {
   background-position: 0 -35px;
 }
 
+.panel {
+  border-radius: 5px;
+  background-color: #F0F0F0;
+  padding: 1em;
+  margin-bottom: 1em;
+  height: 350px;
+}
+@media screen and (min-width: 40em) {
+  .panel {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .panel:last-child {
+    margin-right: 0;
+  }
+  .panel:nth-child(2n) {
+    margin-right: 0;
+  }
+  .panel:nth-child(2n+1) {
+    clear: left;
+  }
+}
+.panel > img {
+  display: block;
+  margin: 0 auto 0.5em auto;
+}
+
+figure.panel {
+  background-color: #fff;
+  padding: 0;
+}
+
 table {
   margin: 0.75em 0;
   width: 100%;
