@@ -402,7 +402,6 @@ h1, h2, h3, h4, h5, h6,
   margin: 0 0  0.3em 0;
   font-weight: bold;
   line-height: 1.25;
-  text-rendering: optimizeLegibility;
 }
 
 h1, .h1 {
@@ -512,19 +511,6 @@ blockquote {
   padding-left: 0.75em;
   border-left: 2px solid #DEDEDE;
   color: #797f82;
-}
-
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px;
-}
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
 }
 
 .hidden,
@@ -1020,9 +1006,13 @@ tr, td, th {
 }
 
 @media print {
-  * {
+  *,
+  *:before,
+  *:after {
     background: transparent !important;
     color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -1040,9 +1030,12 @@ tr, td, th {
     content: " (" attr(title) ")";
   }
 
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
     content: "";
   }
 
@@ -1052,6 +1045,10 @@ tr, td, th {
     page-break-inside: avoid;
   }
 
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
   thead {
     display: table-header-group;
   }
@@ -1065,9 +1062,6 @@ tr, td, th {
     max-width: 100% !important;
   }
 
-  @page {
-    margin: 0.5cm;
-  }
   p,
   h2,
   h3 {
