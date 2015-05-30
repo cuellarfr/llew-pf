@@ -11,7 +11,7 @@
   height: 3em;           
   border: none; 
   border-radius: 3px;        
-  background-color: $medium-blue;
+  background-color: $medium-gray;
   box-shadow: 0 1px 0 rgba(0,0,0,0.6);
   color: #fff;     
   vertical-align: middle;
@@ -31,7 +31,7 @@
   }
 
   &:hover{
-    background-color: darken($medium-blue, 5%);
+    background-color: darken($medium-gray, 5%);
   }
 
   &:active,
@@ -86,13 +86,13 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 // BUTTON POSITIVE
-.button--positive{
+.button--active{
   @extend %button;
-  background-color: $green;
+  background-color: $dark-gray;
   color: #fff;
 
   &:hover{
-    background-color: darken($green, 5%);
+    background-color: darken($dark-gray, 5%);
   }
 }
 
