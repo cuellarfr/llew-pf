@@ -85,10 +85,17 @@ main {
   @include media($small-screen)  {
     @include span-columns(8);
   }
+  @include clearfix;
+  .credits {
+    float: left;
+    margin-bottom: 60px;
+  }
 }
 
 .l-footer__nav {
   @include media($small-screen)  {
     @include span-columns(4);
+    border-left: 1px solid #fff;
+    padding-left: 2em;
   }
 }

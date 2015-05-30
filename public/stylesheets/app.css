@@ -713,6 +713,15 @@ main {
     margin-right: 0;
   }
 }
+.l-footer__credits:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.l-footer__credits .credits {
+  float: left;
+  margin-bottom: 60px;
+}
 
 @media screen and (min-width: 40em) {
   .l-footer__nav {
@@ -720,6 +729,8 @@ main {
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
+    border-left: 1px solid #fff;
+    padding-left: 2em;
   }
   .l-footer__nav:last-child {
     margin-right: 0;
@@ -924,6 +935,32 @@ dl dd {
   display: inline-block;
   padding-right: 5px;
   padding-left: 5px;
+}
+
+.list--sprites {
+  float: right;
+  list-style-type: none;
+  padding-left: 0;
+  width: 35px;
+}
+.list--sprites a {
+  background: url("/images/sprite-xarxes-socials.png") no-repeat;
+  display: block;
+  height: 35px;
+  text-indent: -100000px;
+  margin-bottom: 10px;
+}
+.list--sprites a.facebook {
+  background-position: -35px 0;
+}
+.list--sprites a.facebook:hover {
+  background-position: -35px -35px;
+}
+.list--sprites a.twitter {
+  background-position: 0 0;
+}
+.list--sprites a.twitter:hover {
+  background-position: 0 -35px;
 }
 
 table {

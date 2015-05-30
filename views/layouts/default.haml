@@ -57,21 +57,22 @@
     %footer.l-footer
       .l-container
         .l-footer__credits
-          %p
-            Treball realitzat com a Pràctica final de l'assignatura Llenguatges i estàndards web, 2015
-          %p
-            Carlos Cuéllar Francés
-          %h3
-            La UOC a les xarxes socials
-          %ul.list--unstyled
+          .credits
+            %p
+              Treball realitzat com a Pràctica final de l'assignatura Llenguatges i estàndards web, 2015
+            %p
+              Carlos Cuéllar Francés
+
+          %img{src:"/images/uoc-20anys-footer.png", alt:"Logo UOC 20 anys"}
+        
+          %ul.list--sprites
             %li
-              %a{:href => "https://www.facebook.com/UOC.universitat"}
+              %a.facebook{:href => "https://www.facebook.com/UOC.universitat", :title => "La UOC a Facebook"}
                 Facebook
             %li
-              %a{:href => "https://twitter.com/UOCuniversitat"}
+              %a.twitter{:href => "https://twitter.com/UOCuniversitat", :title => "La UOC a Twitter"}
                 Twitter
-          %hr
-          %img{src:"/images/uoc-20anys-footer.png", alt:"Logo UOC"}
+          
 
         .l-footer__nav
           %h3
