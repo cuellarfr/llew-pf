@@ -4,80 +4,105 @@
 %html.no-js{:lang => "en"}
   / <![endif]
   %head
-    %meta{:charset => "utf-8"}/
+    %meta{:charset => "utf-8"}
     %meta{:content => "width=device-width", :name => "viewport"}
     %title 
       = @title
     %link{:href => "/stylesheets/app.css", :rel => "stylesheet"}
     %script{:src => "/javascripts/vendor/custom.modernizr.js"}
   %body
-    
-    .l-container
-      .l-header
-        .l-header__brand
-          %h2 LLEW Practica Final
-          %p Delicious ERB, Haml + Sass
-        .l-header__nav
-          %nav
-            %ul.list--inline
-              %li
-                %a{:href => "/"}
-                  Inici
-              %li.active
-                %a{:href => "/revistes"}
-                  Revistes
-              %li
-                %a{:href => "#"}
-                  Coneixement en xarxa
-              %li
-                %a{:href => "#"}
-                  Blogs
-              %li
-                %a{:href => "#"}
-                  Materials Oberts
-              %li
-                %a{:href => "#"}
-                  Videos
-      %hr
-    .l-container
-      .l-content
-        =yield
-      .l-aside
-        %form{action: "#", method: "get", role: "search"}
-          %h4
-            %label{for: "search-textbox"} Search
-          %input#search-textbox{name: "q", placeholder: "Search...", type: "search"}
-
-        %h4
-          Some useful links
-        %ul
-          %li
-            %a{:href => "http://get-serve.com/documentation"} Serve Documentation
-            = succeed "Everything" do
-              %br/
-            you need to know about using this project.
-          %li
-            %a{:href => "http://github.com/zurb/foundation"} txp.smacss
-            = succeed "Examples" do
-              %br/
-            of the CSS used in this project.
+    %header.l-header
+      .l-container
+        .l-header__logo
+          %a{:href => "/", title:"Anar a la pàgina d'inici"}
+            %img{src:"/images/uoc-20anys.png", alt:"Logo UOC"}
+        .l-header__lang
+          %ul.list--inline
+            %li
+              %a.button--small.button--active{:href => "#", :title => "Llegir en català"}
+                Ca
+            %li
+              %a.button--small{:href => "#", :title => "Llegir en castellà"}
+                Es
+            %li
+              %a.button--small{:href => "#", :title => "Llegir en anglés"}
+                En
+      .l-header__hero
+        %h1
+          Coneixement Obert
+      %nav.l-header__nav
+        %ul.list--inline
+          %a{:href => "/"}
+            %li
+              Inici
+          %a{:href => "/revistes"}
+            %li.active
+              Revistes
+          %a{:href => "#"}
+            %li
+              Coneixement en xarxa
+          %a{:href => "#"}
+            %li
+              Blogs
+          %a{:href => "#"}
+            %li
+              Materials Oberts
+          %a{:href => "#"}
+            %li
+              Videos
+        
+    %main.l-container
+      =yield
 
     %footer.l-footer
-      %nav.l-footer__nav
-        %ul.list--inline
-          %li
-            %a{:href => "/"}
-              Home
-          %li
-            %a{:href => "/about"}
-              About
-          %li.active
-            %a{:href => "/contact"}
-              Contact
-      .l-footer__credits
-        Published with
-        = succeed "." do
-          %a{href: "http://get-serve.com/", rel: "external", title: "Go to the Serve website"} Serve
+      .l-container
+        .l-footer__credits
+          .credits
+            %p
+              Treball realitzat com a Pràctica final de l'assignatura Llenguatges i estàndards web, 2015
+            %p
+              Carlos Cuéllar Francés
+
+          %img{src:"/images/uoc-20anys-footer.png", alt:"Logo UOC 20 anys"}
+        
+          %ul.list--sprites
+            %li
+              %a.facebook{:href => "https://www.facebook.com/UOC.universitat", :title => "La UOC a Facebook"}
+                Facebook
+            %li
+              %a.twitter{:href => "https://twitter.com/UOCuniversitat", :title => "La UOC a Twitter"}
+                Twitter
+          
+
+        .l-footer__nav
+          %h3
+            Sobre la UOC
+          %ul.list--unstyled
+            %li
+              %a{:href => "http://www.uoc.edu/portal/ca/index.html"}
+                Web de la UOC
+            %li
+              %a{:href => "http://www.uoc.edu/portal/ca/universitat/contacte-seus/index.html"}
+                Contacte i seus 
+          %h3
+            En aquest web
+          %ul.list--unstyled
+            %li
+              %a{:href => "/revistes"}
+                Revistes
+            %li
+              %a{:href => "/revistes"}
+                Coneixement en xarxa
+            %li
+              %a{:href => "/revistes"}
+                Blogs
+            %li
+              %a{:href => "/revistes"}
+                Materials oberts
+            %li
+              %a{:href => "/revistes"}
+                Videos
+      
 
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
     :javascript
