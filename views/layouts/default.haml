@@ -54,21 +54,49 @@
       =yield
 
     %footer.l-footer
-      %nav.l-footer__nav
-        %ul.list--inline
-          %li
-            %a{:href => "/"}
-              Home
-          %li
-            %a{:href => "/about"}
-              About
-          %li.active
-            %a{:href => "/contact"}
-              Contact
-      .l-footer__credits
-        Published with
-        = succeed "." do
-          %a{href: "http://get-serve.com/", rel: "external", title: "Go to the Serve website"} Serve
+      .l-container
+        .l-footer__credits
+          %p
+            %img{src:"/images/uoc-20anys-footer.png", alt:""}
+          %ul.list--inline
+            %li
+              %a
+                Facebook
+            %li
+              %a
+                Twitter
+          %p
+            Treball realitzat com a Pràctica final de l'assignatura Llenguatges i estàndards web, 2015
+          %p
+            Carlos Cuéllar Francés
+
+        .l-footer__nav
+          Sobre la UOC
+          %ul
+            %li
+              %a{:href => "http://www.uoc.edu/portal/ca/index.html"}
+                Web de la UOC
+            %li
+              %a{:href => "http://www.uoc.edu/portal/ca/universitat/contacte-seus/index.html"}
+                Contacte i seus 
+          En aquest web
+          %ul
+            %li
+              %a{:href => "/revistes"}
+                Revistes
+            %li
+              %a{:href => "/revistes"}
+                Coneixement en xarxa
+            %li
+              %a{:href => "/revistes"}
+                Blogs
+            %li
+              %a{:href => "/revistes"}
+                Materials oberts
+            %li
+              %a{:href => "/revistes"}
+                Videos
+      
 
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
     :javascript
