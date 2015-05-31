@@ -1,3 +1,4 @@
+// Estilos para listas genéricas
 ul, ol {
   margin: 0;
   margin-bottom: $base-line-height / 2;
@@ -5,43 +6,29 @@ ul, ol {
   padding-left: $base-line-height;
 }
 
-dl {
-  margin-bottom: $base-line-height / 2;
-  line-height: $base-line-height;
-
-  dt {
-    margin-top: $base-line-height / 2;
-    font-weight: bold;
-  }
-
-  dd {
-    margin: 0;
-  }
-}
-
-// UNSTYLED LIST
+// Listas sin viñetas
 .list--unstyled {
   list-style-type: none;
   padding-left: 0;
 }
 
-// INLINE LIST
+// Listas horizontales
 .list--inline {
   display: inline;
   padding-left: 0;
   list-style-type: none;
   
   li {
-    @include inline-block;
+    display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
   }
 }
 
-// LIST SPRITES
+// Listas para sprites (usadas en el pie de página)
 .list--sprites {
   float: right;
-  list-style-type:none;
+  list-style-type: none;
   padding-left: 0;
   width: 35px;
 
@@ -49,7 +36,7 @@ dl {
     background: url('/images/sprite-xarxes-socials.png') no-repeat;
     display: block;
     height: 35px;
-    text-indent: -100000px;
+    text-indent: -100000px; // Oculta el texto
     margin-bottom: 10px;
   }
 

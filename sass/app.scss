@@ -11,7 +11,6 @@
 
 @import 
   "settings/variables", 
-  "settings/functions", 
   "settings/mixins";
 
 // THE STYLES
@@ -20,8 +19,7 @@
 // Base styles
 @import 
   "base/normalize", 
-  "base/elements",
-  "base/state";
+  "base/elements";
 
 // Layouts
 @import "layouts/global";
@@ -30,10 +28,8 @@
 @import
   "modules/buttons",
   "modules/nav",
-  "modules/labels",
   "modules/lists",
-  "modules/panels",
-  "modules/tables";
+  "modules/panels";
 
 // Print styles
 @import "base/print";

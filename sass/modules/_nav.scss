@@ -1,15 +1,17 @@
+// Estilos para navegación principal
 .l-header__nav .list--inline {
   li {
     @include media($small-screen)  {
       width: auto;
     }
-    width: 100%;
+    width: 100%; // Cada elemento del menú ocupa todo el ancho de pantalla en dispositivos móviles
     padding: 0.5em 1em;
-    border-bottom: 3px solid $medium-gray;
+    border-bottom: 3px solid $medium-gray; 
     &:hover {
       border-bottom: 3px solid $hover-link-color;
     }
   }
+  // Estilos para elemento activo del menú
   .active {
     text-transform: uppercase;
     background-color: $light-gray;
@@ -34,14 +36,15 @@
   }
 }
 
+// Estilos para migas
 .breadcrumbs {
-  @include font-size(1.3);
+  @include font-size(1.3); 
   display: block;
   padding-left: 0;
   list-style-type: none;
 
   li {
-    @include inline-block;
+    display: inline-block;
     padding-right: 5px;
     padding-left: 0;
     font-weight: bold;

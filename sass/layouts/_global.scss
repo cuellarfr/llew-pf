@@ -1,17 +1,20 @@
-// GLOBAL LAYOUT
+// Estilos para estructura
 ///////////////////////////////////////////////////////////////////////////////
 
-// GRID CONTAINER
+// Contenedor de columnas. Usa mixin de Bourbon Neat 
+// http://thoughtbot.github.io/neat-docs/latest/#outer-container
 .l-container {
   @include outer-container;
   padding: 1em;
 }
 
-// HEADER
+// Encabezado
 .l-header {
   padding: 20px 0;
 }
 
+// Logotipo. Usamos el mixin 'media' de Bourbon Neat para generar
+// media-queries del tipo @media screen and (min-width: 40em) de forma rápida
 .l-header__logo {
   @include media($small-screen)  {
     width: 70%;
@@ -20,7 +23,7 @@
   }
   text-align: center;
 }
-
+// Selector de idiomas
 .l-header__lang {
   @include media($small-screen)  {
     width: 30%;
@@ -31,7 +34,9 @@
   text-align: center;
   margin: 1em;
 }
-
+// Imagen de cabecera. Uso display: table para poder centrar verticalmente
+// el texto con mayor facilidad. La imagen cubre todo el fondo guardando 
+// sus proporciones originales gracias al uso de background-size: cover
 .l-header__hero {
   height: 150px;
   background-image: url('/images/header-home.jpg');
@@ -46,19 +51,20 @@
   }
 }
 
+// Menu. Centra el texto, pon fondo de color gris
 .l-header__nav {
   text-align: center;
   background-color: $medium-gray; 
 }
 
-// MAIN COLUMN CONTENT
-
+// Columna de contenido única
 
 .l-wide {
   max-width: 800px;
   margin: 0 auto 1em auto;
 }
 
+// Columna de contenido principal cuando existe un aside
 .l-content {
   @include media($small-screen)  {
     width: 70%;
@@ -67,7 +73,7 @@
   }
 }
 
-// SIDEBAR
+// Aside
 .l-aside {
   @include media($small-screen)  {
     width: 30%;
@@ -75,7 +81,30 @@
   }
 }
 
-// FOOTER
+// Disposición en dos columnas para la página de revistas
+.revista {
+  @include clearfix; // Uso el mixin clearfix para añadir este conocido hack y limpiar floats 
+  border-bottom: 1px solid $base-border-color;
+  margin: 2em 0;
+  padding: 1em 0;
+  img {
+    width: 100%;
+  }
+  > div {
+    @include media($small-screen)  {
+      width: 50%; // Cada columna tiene un ancho de 50%
+      padding: 1em;
+      &:first-child {
+        float: left; // El primer elemento hijo del div flota a la izquierda
+      }
+      &:last-child {
+        float: right; // El último elemento hijo del div flota a la derecha
+      }
+    }
+  }
+}
+
+// Pie de página
 .l-footer {
   background-color: #141315;
   color: #fff;
@@ -85,7 +114,7 @@
     color: #fff;
   }
 }
-
+// Columna izqda del pie de página
 .l-footer__credits {
   @include media($small-screen)  {
     width: 70%;
@@ -97,7 +126,7 @@
     margin-bottom: 60px;
   }
 }
-
+// Columna dcha del pie de página
 .l-footer__nav {
   @include media($small-screen)  {
     width: 30%;

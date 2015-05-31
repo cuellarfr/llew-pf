@@ -1,5 +1,5 @@
 // FONT-SIZE
-// rem font-size with px fallback
+// Este mixin genera font-size con unidad rem y reemplazo de seguridad px
 ///////////////////////////////////////////////////////////////////////////////
 
 @mixin font-size($sizeValue: 1.6){
@@ -8,7 +8,7 @@
 }
 
 // BOX RESET
-// Reset border, margin, and padding
+// Resetea border, margin y padding
 ///////////////////////////////////////////////////////////////////////////////
 
 @mixin box-reset() {

@@ -1,3 +1,4 @@
+// Llamo paneles a las contenedores grises usados en la página de inicio
 .panel {
   @include media($small-screen)  {
     width: 48%;
@@ -5,41 +6,17 @@
     float: left;
   }
   margin-bottom: 1em;
-  border-radius: 5px;
+  border-radius: $base-border-radius;
   background-color: $lighter-gray;
   padding: 1em;
   height: 350px;
   > img {
-    display: block;
+    display: block; // Convierto las imágenes en elementos de bloque para poder centrarles después
     margin: 0 auto 0.5em auto;
   }
 }
-
+// El video de youtube se encuentra dentro de un panel invisible
 figure.panel {
   background-color: #fff;
   padding: 0;
-}
-
-.revista {
-  @include clearfix;
-  border-bottom: 1px solid $base-border-color;
-  margin: 2em 0;
-  padding: 1em 0;
-
-  img {
-    width: 100%;
-  }
-
-  > div {
-    @include media($small-screen)  {
-      width: 50%;
-      padding: 1em;
-      &:first-child {
-        float: left;
-      }
-      &:last-child {
-        float: right;
-      }
-    }
-  }
 }

@@ -1,4 +1,4 @@
-// COLORS
+// COLORES
 ///////////////////////////////////////////////////////////////////////////////
 
 $light-blue: #A4DBE8;
@@ -18,36 +18,31 @@ $light-orange: #FECB8B;
 $green: #82BC00;
 $purple: #753BBD;
 
-// FONT COLORS
+// COLORES USADOS EN TEXTO
 $base-font-color: $dark-gray;
 $base-accent-color: $dark-blue;
 
-// TEXT LINK COLORS
+// COLORES USADOS EN ENLACES
 $base-link-color: $base-accent-color;
 $hover-link-color: $orange;
 
-// BORDER COLOR
+// COLORES DE BORDES
 $base-border-color: $uoc-blue;
 
-// ALERT COLORS
-$error-color: $red;
-$notice-color: $yellow;
-$success-color: $green;
-
-// TYPOGRAPHY
+// TIPOGRAFÍA
 ///////////////////////////////////////////////////////////////////////////////
 
 $sans-serif: $helvetica;
 $serif: $georgia;
 
-$base-font-family: $sans-serif;
-$header-font-family: $sans-serif;
+$base-font-family: $sans-serif; // Tipografía para cuerpos de texto
+$header-font-family: $sans-serif; // Tipografía para encabezados
 
-// SIZES
+// TAMAÑOS
 ///////////////////////////////////////////////////////////////////////////////
-$base-font-size: 1em;
-$base-line-height: $base-font-size * 1.5;
-$base-border-radius: em(3);
+$base-font-size: 1em; // Tamaño base para textos
+$base-line-height: $base-font-size * 1.5; // Tamaño estándar para line-height
+$base-border-radius: 3px; // Tamaño estándar para border-radius
 
 // BREAKPOINTS
 ///////////////////////////////////////////////////////////////////////////////
@@ -55,8 +50,5 @@ $base-border-radius: em(3);
 $small-screen: em(640);
 $medium-screen: em(768);
 $large-screen: em(960);
-$huge-screen: em(1600);
 
-$max-width: 974px;
-// $grid-columns: 12;
-
+$max-width: 974px; // Ancho máximo de página

@@ -1,5 +1,5 @@
-// BASE BUTTON
-// based on https://github.com/csswizardry/beautons/blob/master/beautons.css
+// Base Sass para crear botón
+// basado en https://github.com/csswizardry/beautons/blob/master/beautons.css
 ///////////////////////////////////////////////////////////////////////////////
 
 %button {       
@@ -10,7 +10,7 @@
   padding: 0 0.8em;       
   height: 3em;           
   border: none; 
-  border-radius: 3px;        
+  border-radius: $base-border-radius;        
   background-color: $medium-gray;
   box-shadow: 0 1px 0 rgba(0,0,0,0.6);
   color: #fff;     
@@ -47,15 +47,12 @@
 }
 
 
-// SIZES
-///////////////////////////////////////////////////////////////////////////////
-
-// BASE BUTTON
+// Botón básico
 .button {
   @extend %button;
 }
 
-// SMALL BUTTON
+// Botón pequeño
 .button--small {
   @extend %button;
   padding-right: 0.5em;
@@ -64,28 +61,7 @@
   line-height: 2;
 }
 
-// LARGE BUTTON
-.button--large {
-  @extend %button;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  height: 4em;
-  line-height: 4;
-}
-
-// FULL WIDTH BUTTON
-.button--full {
-  @extend %button;
-  padding-right: 0;
-  padding-left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-// FUNCTIONS
-///////////////////////////////////////////////////////////////////////////////
-
-// BUTTON POSITIVE
+// Botón activo (usado en el menú de idiomas)
 .button--active{
   @extend %button;
   background-color: $dark-gray;
@@ -93,51 +69,5 @@
 
   &:hover{
     background-color: darken($dark-gray, 5%);
-  }
-}
-
-// BUTTON NEGATIVE
-.button--negative {
-  @extend %button;
-  background-color: $red;
-  color: #fff;
-
-  &:hover{
-    background-color: darken($red, 5%);
-  }
-}
-
-// BUTTON WARNING
-.button--warning {
-  @extend %button;
-  background-color: $orange;
-  color: #fff;
-
-  &:hover{
-    background-color: darken($orange, 5%);
-  }
-}
-
-// BUTTON SECONDARY
-.button--secondary {
-  @extend %button;
-  background-color: $light-gray;
-  color: #fff;
-
-  &:hover{
-    background-color: darken($light-gray, 5%);
-  }
-}
-
-// DISABLED BUTTON
-.button--disabled {
-  @extend %button;
-  background-color: $light-blue;
-  cursor: default;
-  
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: $light-blue;
   }
 }

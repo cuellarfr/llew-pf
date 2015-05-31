@@ -1,7 +1,7 @@
 html {
-  font-size: 62.5%; // Sets up base 10
+  font-size: 62.5%; // Establece base 10
   @media only screen and (max-width: $small-screen) {
-    font-size: 55%; // Smaller type for small devices
+    font-size: 55%; // Haz el texto más pequeño en dispositivos móviles
   }
 }
 
@@ -14,40 +14,31 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-// HEADINGS
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+// Encabezados
+h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
   margin: 0 0  0.3em 0;
   font-weight: bold;
   line-height: 1.25;
 }
 
-h1, .h1 {
+h1 {
   @include font-size(3.2); // 32px
 }
 
-h2, .h2 {
+h2 {
   @include font-size(2.8); // 28px
 }
 
-h3, .h3 {
+h3 {
   @include font-size(2.4); // 24px
 }
 
-h4, .h4 {
+h4 {
   @include font-size(2.0); // 20px
 }
 
-h5, .h5 {
-  @include font-size(1.6); // 16px
-}
-
-h6, .h6 {
-  @include font-size(1.4); // 14px
-}
-
-// BODY TEXT
+// Cuerpo
 p {
   margin: 0 0 ($base-line-height * .5);
 }
@@ -95,7 +86,7 @@ figcaption {
   @include font-size(1.2);
 }
 
-// INLINE TEXT SEMANTICS
+// Otros elementos semánticos en línea
 abbr, acronym {
   border-bottom: 1px dotted $base-border-color;
   cursor: help;
