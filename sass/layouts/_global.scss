@@ -13,7 +13,8 @@
 
 .l-header__logo {
   @include media($small-screen)  {
-    @include span-columns(8);
+    width: 70%;
+    float: left;
     text-align: left;
     padding: 10px 5px;
   }
@@ -22,7 +23,8 @@
 
 .l-header__lang {
   @include media($small-screen)  {
-    @include span-columns(4);
+    width: 30%;
+    float: right;
     text-align: right;
     padding: 10px 5px;
     margin: 0;
@@ -37,7 +39,6 @@
   background-size: cover;
   display: table;
   width: 100%;
-  
   h1 {
     color: #fff;
     display: table-cell;
@@ -78,7 +79,6 @@ main {
   color: #fff;
   padding: 2em 1em;
   margin-top: 20px;
-
   a {
     color: #fff;
   }
@@ -86,9 +86,10 @@ main {
 
 .l-footer__credits {
   @include media($small-screen)  {
-    @include span-columns(8);
+    width: 70%;
+    float: left;
+    padding-right: 2em;
   }
-  @include clearfix;
   .credits {
     float: left;
     margin-bottom: 60px;
@@ -97,8 +98,11 @@ main {
 
 .l-footer__nav {
   @include media($small-screen)  {
-    @include span-columns(4);
+    width: 30%;
+    float: right;
     border-left: 1px solid #fff;
     padding-left: 2em;
+    clear: none;
   }
+  clear: both;
 }

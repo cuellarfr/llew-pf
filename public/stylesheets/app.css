@@ -601,15 +601,10 @@ blockquote {
 }
 @media screen and (min-width: 40em) {
   .l-header__logo {
+    width: 70%;
     float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
     text-align: left;
     padding: 10px 5px;
-  }
-  .l-header__logo:last-child {
-    margin-right: 0;
   }
 }
 
@@ -619,16 +614,11 @@ blockquote {
 }
 @media screen and (min-width: 40em) {
   .l-header__lang {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
+    width: 30%;
+    float: right;
     text-align: right;
     padding: 10px 5px;
     margin: 0;
-  }
-  .l-header__lang:last-child {
-    margin-right: 0;
   }
 }
 
@@ -682,36 +672,26 @@ main {
 
 @media screen and (min-width: 40em) {
   .l-footer__credits {
+    width: 70%;
     float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
+    padding-right: 2em;
   }
-  .l-footer__credits:last-child {
-    margin-right: 0;
-  }
-}
-.l-footer__credits:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .l-footer__credits .credits {
   float: left;
   margin-bottom: 60px;
 }
 
+.l-footer__nav {
+  clear: both;
+}
 @media screen and (min-width: 40em) {
   .l-footer__nav {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
+    width: 30%;
+    float: right;
     border-left: 1px solid #fff;
     padding-left: 2em;
-  }
-  .l-footer__nav:last-child {
-    margin-right: 0;
+    clear: none;
   }
 }
 
@@ -964,27 +944,17 @@ dl dd {
 }
 
 .panel {
+  margin-bottom: 1em;
   border-radius: 5px;
   background-color: #F0F0F0;
   padding: 1em;
-  margin-bottom: 1em;
   height: 350px;
 }
 @media screen and (min-width: 40em) {
   .panel {
+    width: 48%;
+    margin: 1%;
     float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-  }
-  .panel:last-child {
-    margin-right: 0;
-  }
-  .panel:nth-child(2n) {
-    margin-right: 0;
-  }
-  .panel:nth-child(2n+1) {
-    clear: left;
   }
 }
 .panel > img {
@@ -1010,15 +980,17 @@ figure.panel {
 .revista img {
   width: 100%;
 }
-.revista > div {
-  width: 50%;
-  padding: 1em;
-}
-.revista > div:first-child {
-  float: left;
-}
-.revista > div:last-child {
-  float: right;
+@media screen and (min-width: 40em) {
+  .revista > div {
+    width: 50%;
+    padding: 1em;
+  }
+  .revista > div:first-child {
+    float: left;
+  }
+  .revista > div:last-child {
+    float: right;
+  }
 }
 
 table {
@@ -1109,5 +1081,10 @@ tr, td, th {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+
+  .l-header,
+  .l-footer {
+    display: none;
   }
 }
