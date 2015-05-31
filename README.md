@@ -26,5 +26,23 @@ He incluído comentarios al código HTML y CSS. Se pueden consultar fácilmente 
 - Archivos Haml (compilados después como HTML5): <https://github.com/cuellarfr/llew-pf/tree/master/views>
 
 
+Arquitectura CSS
+----------------
 
+Como ya he comentado, he seguido la metodología Smacss para organizar mis hojas de estilo.
+
++-- base
+|   +-- _elements.scss
+|   +-- _normalize.scss
++-- layouts
+|   +-- _global.scss
++-- modules
+|   +-- _buttons.scss
+|   +-- _lists.scss
+|   +-- _nav.scss
+|   +-- _panels.scss
++-- settings
+|   +-- _mixins.scss
+|   +-- _variables.scss
++-- _app.css
 
