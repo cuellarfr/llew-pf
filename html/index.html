@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang='ca'>
+  <head>
+    <meta charset='utf-8'>
+    <!-- Usamos el metatag 'viewport' para controlar la estructura en dispositivos móviles -->
+    <meta content='width=device-width' name='viewport'>
+    <!-- Usamos el metatag 'author' para indicar el autor de la página -->
+    <meta content='Carlos Cuellar' name='author'>
+    <title>
+      Coneixement Obert
+    </title>
+    <!-- Carga webfont Lato desde los servidores de Google Fonts https://www.google.com/fonts/specimen/Lato -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet'>
+    <!-- Carga todos mis estilos compilados, incluyendo Normalize http://necolas.github.io/normalize.css/ -->
+    <link href='stylesheets/app.css' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- Cabecera. Incluye logo, navegación de idiomas, banner ancho 'hero' y navegación principal -->
+    <header class='l-header'>
+      <div class='l-container'>
+        <div class='l-header__logo'>
+          <a href='index.html' title="Anar a la pàgina d'inici">
+            <img alt='Logo UOC' src='images/uoc-20anys.png'>
+          </a>
+        </div>
+        <div class='l-header__lang'>
+          <ul class='list--inline'>
+            <li>
+              <a class='button--small button--active' href='#' title='Llegir en català'>
+                Ca
+              </a>
+            </li>
+            <li>
+              <a class='button--small' href='#' title='Llegir en castellà'>
+                Es
+              </a>
+            </li>
+            <li>
+              <a class='button--small' href='#' title='Llegir en anglés'>
+                En
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='l-header__hero'>
+        <h1>
+          Coneixement Obert
+        </h1>
+      </div>
+      <nav class='l-header__nav'>
+        <ul class='list--inline'>
+          <!-- Elemento activo del menú de navegación -->
+          <li class='active'>
+            <a href='index.html'>
+              Inici
+            </a>
+          </li>
+          <li>
+            <a href='revistes.html'>
+              Revistes
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              Coneixement en xarxa
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              Blogs
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              Materials Oberts
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              Vídeos
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main class='l-container'>
+      <!-- Uso la clase l-wide para marcar un ancho máximo de 800px -->
+      <p class='l-wide'>
+        La universitat que ve és la universitat que viu a internet, que creix, es relaciona i comparteix lliurement el coneixement en benefici de tota la societat. Com a primera universitat de la societat del coneixement, la UOC vol retornar el coneixement que ha generat al conjunt d'aquesta societat.
+      </p>
+      <div class='panel'>
+        <!-- Las imágenes de los paneles tienen un elemento alt vacío puesto que son sólo decorativas -->
+        <img alt='' src='images/tipus-revista.png'>
+        <!-- Los encabezados son los segundos en importancia, y por lo tanto son h2 -->
+        <h2>
+          Revistes acadèmiques
+        </h2>
+        <p>
+          Les revistes digitals impulsades pels Estudis de la UOC.
+        </p>
+        <a class='button--small' href='revistes.html'>
+          Llegeix-ne més
+        </a>
+      </div>
+      <div class='panel'>
+        <img alt='' src='images/tipus-xarxa.png'>
+        <h2>
+          Coneixement en xarxa
+        </h2>
+        <p>
+          Webs de difusió del coneixement impulsats o coimpulsats per la UOC i altres institucions de sectors afins.
+        </p>
+        <a class='button--small' href='#'>
+          Llegeix-ne més
+        </a>
+      </div>
+      <div class='panel'>
+        <img alt='' src='images/tipus-blog.png'>
+        <h2>
+          Blogs
+        </h2>
+        <p>
+          Blogs impulsats per Estudis, professors, investigadors, projectes o àrees de gestió de la UOC.
+        </p>
+        <a class='button--small' href='#'>
+          Llegeix-ne més
+        </a>
+      </div>
+      <div class='panel'>
+        <img alt='' src='images/tipus-materials.png'>
+        <h2>
+          Materials oberts
+        </h2>
+        <p>
+          Blogs impulsats per Estudis, professors, investigadors, projectes o àrees de gestió de la UOC.
+        </p>
+        <a class='button--small' href='#'>
+          Llegeix-ne més
+        </a>
+      </div>
+      <div class='panel'>
+        <img alt='' src='images/tipus-video.png'>
+        <h2>
+          Vídeos
+        </h2>
+        <p>
+          Una selecció dels vídeos de la UOC: ponències, xerrades, conferències, entrevistes, debats, reportatges, etc.
+        </p>
+        <a class='button--small' href='#'>
+          Llegeix-ne més
+        </a>
+      </div>
+      <!-- Video incluído dentro de una etiqueta figure, con una descripción usando figcaption. -->
+      <!-- El video se adapta al ancho del contenedor gracias a fitVids, un plugin de jQuery para vídeos responsive. -->
+      <figure class='panel'>
+        <iframe allowfullscreen='' height='315' src='https://www.youtube.com/embed/5qQuGQUqBVE' width='560'></iframe>
+        <figcaption>
+          UOC, la primera universitat online del món.
+        </figcaption>
+      </figure>
+    </main>
+    <!-- Pie de página. Incluye créditos, navegación y enlaces externos -->
+    <footer class='l-footer'>
+      <div class='l-container'>
+        <div class='l-footer__credits'>
+          <div class='credits'>
+            <p>
+              Treball realitzat com a Pràctica final de l'assignatura Llenguatges i estàndards web, 2015
+            </p>
+            <p>
+              Carlos Cuéllar Francés
+            </p>
+          </div>
+          <img alt='Logo UOC 20 anys' src='images/uoc-20anys-footer.png'>
+          <ul class='list--sprites'>
+            <li>
+              <a class='facebook' href='https://www.facebook.com/UOC.universitat' title='La UOC a Facebook'>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a class='twitter' href='https://twitter.com/UOCuniversitat' title='La UOC a Twitter'>
+                Twitter
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class='l-footer__nav'>
+          <h3>
+            En aquest web
+          </h3>
+          <ul class='list--unstyled'>
+            <li>
+              <a href='/revistes'>
+                Revistes
+              </a>
+            </li>
+            <li>
+              <a href='/revistes'>
+                Coneixement en xarxa
+              </a>
+            </li>
+            <li>
+              <a href='/revistes'>
+                Blogs
+              </a>
+            </li>
+            <li>
+              <a href='/revistes'>
+                Materials oberts
+              </a>
+            </li>
+            <li>
+              <a href='/revistes'>
+                Vídeos
+              </a>
+            </li>
+          </ul>
+          <h3>
+            Sobre la UOC
+          </h3>
+          <ul class='list--unstyled'>
+            <li>
+              <a href='http://www.uoc.edu/portal/ca/index.html'>
+                Web de la UOC
+              </a>
+            </li>
+            <li>
+              <a href='http://www.uoc.edu/portal/ca/universitat/contacte-seus/index.html'>
+                Contacte i seus
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- Carga jQuery desde los servidores de Google (más rápido). Si fallan, carga copia local. -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script>
+      window.jQuery || document.write('<script src="javascripts/vendor/jquery.js"><\/script>')
+    </script>
+    <!-- Carga nuestros scripts -->
+    <script src='javascripts/main.js'></script>
+    <!-- Ejecuta el plugin fitVids para conseguir videos responsive http://fitvidsjs.com/ -->
+    <script>
+      $(document).ready(function(){
+        $(".panel").fitVids();
+      });
+    </script>
+  </body>
+</html>

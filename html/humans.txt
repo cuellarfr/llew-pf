@@ -1,0 +1,10 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+Design & development: Carlos Cuellar
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Serve
+  Software: Sublime Text, Git
