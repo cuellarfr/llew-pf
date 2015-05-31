@@ -555,6 +555,7 @@ blockquote {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  text-shadow: 1px 1px black;
 }
 
 .l-header__nav {
