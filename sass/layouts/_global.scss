@@ -52,14 +52,13 @@
   }
 }
 
-// Menu. Centra el texto, pon fondo de color gris
+// Menú. Centra el texto, pon fondo de color gris
 .l-header__nav {
   text-align: center;
   background-color: $medium-gray; 
 }
 
 // Columna de contenido única
-
 .l-wide {
   max-width: 800px;
   margin: 0 auto 1em auto;

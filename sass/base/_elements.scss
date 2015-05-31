@@ -1,7 +1,7 @@
 html {
-  font-size: 62.5%; // Establece base 10
+  font-size: 62.5%; // Establece texto base 10
   @media only screen and (max-width: $small-screen) {
-    font-size: 55%; // Haz el texto más pequeño en dispositivos móviles
+    font-size: 55%; // Hace el texto más pequeño en dispositivos móviles
   }
 }
 
