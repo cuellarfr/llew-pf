@@ -31,6 +31,7 @@ Arquitectura CSS
 
 Como ya he comentado, he seguido la metodología Smacss para organizar mis hojas de estilo.
 
+.
 +-- base
 |   +-- _elements.scss
 |   +-- _normalize.scss
