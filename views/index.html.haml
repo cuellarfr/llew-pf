@@ -1,10 +1,12 @@
 - @title = "Coneixement Obert"
-
+/ Uso la clase l-wide para marcar un ancho máximo de 800px
 %p.l-wide
   La universitat que ve és la universitat que viu a internet, que creix, es relaciona i comparteix lliurement el coneixement en benefici de tota la societat. Com a primera universitat de la societat del coneixement, la UOC vol retornar el coneixement que ha generat al conjunt d'aquesta societat.
 
 .panel
+  / Las imágenes de los paneles tienen un elemento alt vacío puesto que son sólo decorativas
   %img{src:"/images/tipus-revista.png", alt:""}
+  / Los encabezados son los segundos en importancia, y por lo tanto son h2
   %h2
     Revistes acadèmiques
   %p
@@ -43,6 +45,8 @@
     Una selecció dels vídeos de la UOC: ponències, xerrades, conferències, entrevistes, debats, reportatges, etc.
   %a.button--small{:href => "#"}
     Llegeix-ne més
+/ Video incluído dentro de una etiqueta figure, con una descripción usando figcaption.
+/ El video se adapta al ancho del contenedor gracias a fitVids, un plugin de jQuery para vídeos responsive.
 %figure.panel
   %iframe{:allowfullscreen => "", :height => "315", :src => "https://www.youtube.com/embed/5qQuGQUqBVE", :width => "560"}
   %figcaption
