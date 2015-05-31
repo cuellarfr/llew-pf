@@ -4,6 +4,7 @@
 // GRID CONTAINER
 .l-container {
   @include outer-container;
+  padding: 1em;
 }
 
 // HEADER
@@ -16,7 +17,6 @@
     width: 70%;
     float: left;
     text-align: left;
-    padding: 10px 5px;
   }
   text-align: center;
 }
@@ -26,7 +26,6 @@
     width: 30%;
     float: right;
     text-align: right;
-    padding: 10px 5px;
     margin: 0;
   }
   text-align: center;
@@ -53,8 +52,11 @@
 }
 
 // MAIN COLUMN CONTENT
-main {
-  padding: 1em;
+
+
+.l-wide {
+  max-width: 800px;
+  margin: 0 auto 1em auto;
 }
 
 .l-content {
