@@ -1,13 +1,14 @@
 - @title = "Revistes | Coneixement Obert"
-
-%ul.breadcrumbs
-  %li
-    %a{:href => "/", title:"Anar a la pàgina d'inici"}
-      Inici
-  %li
-    Revistes
-
-.revista
+/ Las migas son una lista horizontal incluída dentro de una etiqueta nav
+%nav
+  %ul.breadcrumbs
+    %li
+      %a{:href => "/", title:"Anar a la pàgina d'inici"}
+        Inici
+    %li
+      Revistes
+/ Cada descripción de revista está incluída dentro de una etiqueta article
+%article.revista
   .revista__img
     %img{src:"/images/revistes-digithum.png", alt:"Logo revistes Digithum"}
   .revista__info
@@ -18,7 +19,7 @@
     %a.button--small{:href => "/revistes/digithum"}
       Llegeix-ne més
 
-.revista
+%article.revista
   .revista__info
     %h2
       COMeIN
@@ -29,18 +30,20 @@
   .revista__img
     %img{src:"/images/revistes-comein.png", alt:"Logo revistes COMeIN"}
 
-.revista
+%article.revista
   .revista__img
     %img{src:"/images/revistes-bid.png", alt:"Logo revistes BiD"}
   .revista__info
     %h2
       BiD: textos universitaris de biblioteconomia i documentació
     %p
-      La Facultat de Biblioteconomia i Documentació de la Universitat de Barcelona (UB) i els Estudis de Ciències de la Informació i de la Comunicació de la UOC són els editors d'aquesta revista científica especialitzada en informació i documentació.
+      La Facultat de Biblioteconomia i Documentació de la 
+      %abbr{title:'Universitat de Barcelona'} UB 
+      i els Estudis de Ciències de la Informació i de la Comunicació de la UOC són els editors d'aquesta revista científica especialitzada en informació i documentació.
     %a.button--small{:href => "#"}
       Llegeix-ne més
 
-.revista
+%article.revista
   .revista__info
     %h2
       Artnodes, revista d'art, ciència i tecnologia
@@ -51,7 +54,7 @@
   .revista__img
     %img{src:"/images/revistes-artnodes.png", alt:"Logo revistes Artnodes"}
 
-.revista
+%article.revista
   .revista__img
     %img{src:"/images/revistes-analisi.png", alt:"Logo revistes Anàlisi"}
   .revista__info
