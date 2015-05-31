@@ -808,6 +808,7 @@ blockquote {
 }
 .l-header__nav .list--inline .active {
   text-transform: uppercase;
+  background-color: #DDD;
   border-bottom: 3px solid #153E4B;
 }
 .l-header__nav .list--inline a {

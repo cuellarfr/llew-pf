@@ -12,6 +12,7 @@
   }
   .active {
     text-transform: uppercase;
+    background-color: $light-gray;
     border-bottom: 3px solid $uoc-blue;
   }
   // Sobreescribe estilos de enlaces por defecto
