@@ -18,3 +18,25 @@ figure.panel {
   background-color: #fff;
   padding: 0;
 }
+
+.revista {
+  @include clearfix;
+  border-bottom: 1px solid $base-border-color;
+  margin: 2em 0;
+  padding: 1em 0;
+
+  img {
+    width: 100%;
+  }
+  
+  > div {
+    width: 50%;
+    padding: 1em;
+    &:first-child {
+      float: left;
+    }
+    &:last-child {
+      float: right;
+    }
+  }
+}
