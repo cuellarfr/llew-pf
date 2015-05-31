@@ -58,14 +58,17 @@ main {
 
 .l-content {
   @include media($small-screen)  {
-    @include span-columns(8);
+    width: 70%;
+    float: left;
+    padding-right: 2em;
   }
 }
 
 // SIDEBAR
 .l-aside {
   @include media($small-screen)  {
-    @include span-columns(4);
+    width: 30%;
+    float: right;
   }
 }
 
