@@ -1,35 +1,35 @@
 @charset "utf-8";
 
-// SASS PLUGINS
+// Plugins de Sass
 ///////////////////////////////////////////////////////////////////////////////
 
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-// SASS SETTINGS
+// Configuración de Sass
 ///////////////////////////////////////////////////////////////////////////////
 
 @import 
   "settings/variables", 
   "settings/mixins";
 
-// THE STYLES
+// Estilos
 ///////////////////////////////////////////////////////////////////////////////
 
-// Base styles
+// Estilos base
 @import 
   "base/normalize", 
   "base/elements";
 
-// Layouts
+// Estructura
 @import "layouts/global";
 
-// Modules
+// Módulos
 @import
   "modules/buttons",
   "modules/nav",
   "modules/lists",
   "modules/panels";
 
-// Print styles
+// Impresión
 @import "base/print";
