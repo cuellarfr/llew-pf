@@ -30,7 +30,7 @@ Arquitectura CSS
 ----------------
 
 Como ya he comentado, he seguido la metodología Smacss para organizar mis hojas de estilo.
-
+<pre>
 .
 +-- base
 |   +-- _elements.scss
@@ -46,4 +46,5 @@ Como ya he comentado, he seguido la metodología Smacss para organizar mis hojas
 |   +-- _mixins.scss
 |   +-- _variables.scss
 +-- _app.css
+</pre>
 
