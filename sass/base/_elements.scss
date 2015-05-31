@@ -106,12 +106,7 @@ small,
 }
 
 cite {
-  color: lighten($base-font-color, 25);
   font-style: italic;
-  
-  &:before {
-    content: '\2014 \00A0';
-  }
 }
 
 blockquote {
