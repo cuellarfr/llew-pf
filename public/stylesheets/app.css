@@ -392,13 +392,12 @@ body {
   font-size: 1.4rem;
   background-color: #fff;
   color: #54585A;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   line-height: 1.5em;
-  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   margin: 0 0  0.3em 0;
   font-weight: bold;
   line-height: 1.25;

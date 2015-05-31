@@ -3,8 +3,10 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{:content => "width=device-width", :name => "viewport"}
+    %meta{:content => "Carlos Cuellar", :name => "author"}
     %title 
       = @title
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:400,700,400italic", :rel => "stylesheet"}
     %link{:href => "/stylesheets/app.css", :rel => "stylesheet"}
   %body
     %header.l-header
@@ -70,16 +72,7 @@
                 Twitter
           
 
-        .l-footer__nav
-          %h3
-            Sobre la UOC
-          %ul.list--unstyled
-            %li
-              %a{:href => "http://www.uoc.edu/portal/ca/index.html"}
-                Web de la UOC
-            %li
-              %a{:href => "http://www.uoc.edu/portal/ca/universitat/contacte-seus/index.html"}
-                Contacte i seus 
+        %nav.l-footer__nav
           %h3
             En aquest web
           %ul.list--unstyled
@@ -98,11 +91,15 @@
             %li
               %a{:href => "/revistes"}
                 Vídeos
-      
-    :javascript
-      $(document).ready(function(){
-        $(".panel").fitVids();
-      });
+          %h3
+            Sobre la UOC
+          %ul.list--unstyled
+            %li
+              %a{:href => "http://www.uoc.edu/portal/ca/index.html"}
+                Web de la UOC
+            %li
+              %a{:href => "http://www.uoc.edu/portal/ca/universitat/contacte-seus/index.html"}
+                Contacte i seus 
 
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
     :javascript

@@ -32,8 +32,8 @@ $base-border-color: $uoc-blue;
 // TIPOGRAFÍA
 ///////////////////////////////////////////////////////////////////////////////
 
-$sans-serif: $helvetica;
-$serif: $georgia;
+$sans-serif: Lato, Arial, sans-serif;
+$serif: Georgia, 'Times New Roman', serif;
 
 $base-font-family: $sans-serif; // Tipografía para cuerpos de texto
 $header-font-family: $sans-serif; // Tipografía para encabezados

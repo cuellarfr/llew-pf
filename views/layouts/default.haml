@@ -2,11 +2,18 @@
 %html{:lang => "ca"}
   %head
     %meta{:charset => "utf-8"}
+    // Usamos el metatag 'viewport' para controlar la estructura en dispositivos móviles
     %meta{:content => "width=device-width", :name => "viewport"}
+    // Usamos el metatag 'author' para indicar el autor de la página
+    %meta{:content => "Carlos Cuellar", :name => "author"}
     %title 
       = @title
+    // Carga webfont Lato desde los servidores de Google Fonts https://www.google.com/fonts/specimen/Lato
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:400,700,400italic", :rel => "stylesheet"}
+    // Carga todos mis estilos compilados, incluyendo Normalize http://necolas.github.io/normalize.css/
     %link{:href => "/stylesheets/app.css", :rel => "stylesheet"}
   %body
+    // Cabecera. Incluye logo, navegación de idiomas, banner ancho 'hero' y navegación principal
     %header.l-header
       .l-container
         .l-header__logo
@@ -46,10 +53,10 @@
           %li
             %a{:href => "#"}
               Vídeos
-        
+    // Contenido principal    
     %main.l-container
       =yield
-
+    // Pie de página. Incluye créditos, navegación y enlaces externos
     %footer.l-footer
       .l-container
         .l-footer__credits
@@ -70,16 +77,7 @@
                 Twitter
           
 
-        .l-footer__nav
-          %h3
-            Sobre la UOC
-          %ul.list--unstyled
-            %li
-              %a{:href => "http://www.uoc.edu/portal/ca/index.html"}
-                Web de la UOC
-            %li
-              %a{:href => "http://www.uoc.edu/portal/ca/universitat/contacte-seus/index.html"}
-                Contacte i seus 
+        %nav.l-footer__nav
           %h3
             En aquest web
           %ul.list--unstyled
@@ -98,12 +96,23 @@
             %li
               %a{:href => "/revistes"}
                 Vídeos
-      
+          %h3
+            Sobre la UOC
+          %ul.list--unstyled
+            %li
+              %a{:href => "http://www.uoc.edu/portal/ca/index.html"}
+                Web de la UOC
+            %li
+              %a{:href => "http://www.uoc.edu/portal/ca/universitat/contacte-seus/index.html"}
+                Contacte i seus 
 
+    // Carga jQuery desde los servidores de Google (más rápido). Si fallan, carga copia local.
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
     :javascript
       window.jQuery || document.write('<script src="javascripts/vendor/jquery.js"><\/script>')
+    // Carga nuestros scripts
     %script{:src => "/javascripts/main.js"}
+    // Ejecuta el plugin fitVids para conseguir videos responsive http://fitvidsjs.com/
     :javascript
       $(document).ready(function(){
         $(".panel").fitVids();
